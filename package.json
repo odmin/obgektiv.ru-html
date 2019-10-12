@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "modern-normalize": "^0.5.0",
+    "purecss": "^1.0.1"
+  },
+  "devDependencies": {
+    "posthtml": "^0.11.4",
+    "posthtml-expressions": "^1.1.1",
+    "posthtml-include": "^1.2.0"
+  }
+}
