@@ -22,7 +22,7 @@ npm run dev
 3. For build production-ready files, run
 
 ```bash
-npm run duild
+npm run build
 ```
 
 4. Open http://localhost:1234 and enjoy!
