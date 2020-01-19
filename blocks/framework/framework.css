@@ -1,7 +1,41 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+  font-family: 'PT Serif', sans-serif;
+  color: #212121;
+  position: relative;
   /* background: #ccc; */
+}
+/* purecss reset */
+html, button, input, select, textarea,
+.pure-g, .pure-g [class *= "pure-u"] {
+  font-family: 'PT Serif', sans-serif;
+  letter-spacing: normal;
+}
+
+.pure-g__end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pure-g__center {
+  justify-content: center;
+  align-items: center;
+}
+
+.app-text-center{
+  text-align: center;
+}
+
+.app-row {
+  padding: 1.5em 0;
+}
+
+.app-line {
+  min-width: 20%;
+  height: 2px;
+  background: #212121;
+  flex: 1;
 }
 
 @media (max-width: 1200px) {

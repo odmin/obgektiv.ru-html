@@ -1,0 +1,40 @@
+.main {
+  color: #212121;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .main--subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main .main--title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 85px;
+  margin-top: 0;
+}
+.main.main__home .main--article {
+  padding: 0 8px;
+}
+
+.main.main__home .main--article p:first-child{
+  margin-top: 0;
+}
+
+.main.main__home .main--article p:last-child{
+  margin-bottom: 0;
+}
+
+.main.main__home .main--article img{
+  width: 100%;
+  height: auto;
+}
+
+.main.main__home .main__header {
+  border-right: 2px solid #212121;
+  margin-right: 8px;
+}

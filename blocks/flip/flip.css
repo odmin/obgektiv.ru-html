@@ -1,0 +1,90 @@
+.flip {
+  display: block;
+  min-width: 100%;
+  width: auto;
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+	visibility: hidden;
+}
+
+.flip .flip--bg {
+  height: 692px;
+  background: #9FD2D8;
+}
+
+.flip--content {
+  margin-top: 265px;
+  padding: 0 20px 0 60px;
+}
+
+.flip--title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: .8em;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #3E3E3E;
+}
+
+.flip--subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flip--subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  background: #212121;
+  margin-right: 5px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.flip__slide {
+	-webkit-animation-name: slideDown;
+  animation-name: slideDown;
+
+	-webkit-animation-duration: 1500ms;
+  animation-duration: 1500ms;
+
+	-webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+
+@-webkit-keyframes slideDown {
+  0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(20%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(20%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}

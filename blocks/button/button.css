@@ -1,0 +1,116 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: center;
+  padding: 6px 30px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+}
+
+.button.button__white {
+  color: #fff;
+  border: 5px solid #FFFFFF;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.button.button__switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+
+.button.button__switch .button--helper{
+  position: relative;
+  display: inline-block;
+  content: "";
+  margin: 0 .5rem;
+  width: 100px;
+  height: 56px;
+  background-color: #9FD2D8;
+  border-radius: 43px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+
+.button.button__switch .button--helper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 96px;
+  height: 52px;
+  background-color: #9FD2D8;
+  border-radius: 43px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+
+.button.button__switch .button--helper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 43px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.button.button__switch:active .button--helper::after {
+  width: 66px;
+  transform: translate3d(25px, 2px, 0);
+}
+
+.button.button__switch:active .button--input:checked + i::after {
+  transform: translate3d(32px, 2px, 0);
+}
+
+.button.button__switch .button--input {
+  display: none;
+}
+
+.button.button__switch .button--input:checked + .button--helper {
+  background-color: #9FD2D8;
+}
+
+.button.button__switch .button--input:checked + .button--helper::before {
+  transform: translate3d(48px, 2px, 0) scale3d(0, 0, 0);
+}
+
+.button.button__switch .button--input:checked + .button--helper::after {
+  transform: translate3d(48px, 2px, 0);
+}
+
+.button.button__switch .button--off {
+  color: #9FD2D8;
+}
+.button.button__switch .button--on {
+  color: inherit;
+}
+
+.button.button__switch.checked .button--off {
+  color: inherit;
+}
+.button__switch.checked .button--on {
+  color: #9FD2D8;
+}
+
+.button.button__soft {
+  color: #FFFFFF;
+  background: #9FD2D8;
+  border: 5px solid #9FD2D8;
+}
