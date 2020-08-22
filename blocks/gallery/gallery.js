@@ -30,5 +30,21 @@ for (let item of list) {
     else {
       console.error("Content urls did not set on data-attributes");
     }
+    galleryCountHeight();
   });
 }
+function galleryCountHeight() {
+  let sum = 0;
+  for (let i of document.getElementsByClassName('gallery--menu-item')) {
+    sum += i.clientHeight;
+  }
+  for (let gallery of document.getElementsByClassName("gallery--screen")) {
+    console.debug(gallery.className);
+    gallery.style.height = sum + 'px';
+    console.debug(gallery.style.height);
+  }
+}
+window.addEventListener('load', function () {
+  console.log("Gallery will be make pretty after page loaded");
+  galleryCountHeight();
+})

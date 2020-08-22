@@ -1,3 +1,5 @@
+@import "../framework/var.css";
+
 .flip {
   display: block;
   min-width: 100%;
@@ -15,9 +17,41 @@
   background: #9FD2D8;
 }
 
+@media (max-width: 1100px) {
+  .flip .flip--bg {
+    position: relative;
+    height: 455px;
+  }
+}
+
+@media (max-width: 568px) {
+  .flip .flip--bg {
+    margin-left: 67px;
+    height: 275px;
+  }
+}
+
 .flip--content {
   margin-top: 265px;
   padding: 0 20px 0 60px;
+}
+
+@media (max-width: 1100px) {
+  .flip--content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 59px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 568px) {
+  .flip--content {
+    margin-top: 0;
+    margin-bottom: 15px;
+    position: static;
+  }
 }
 
 .flip--title {
@@ -27,6 +61,11 @@
   letter-spacing: -0.05em;
   text-transform: uppercase;
   color: #3E3E3E;
+}
+@media (max-width: 568px) {
+  .flip--title {
+    font-size: 50px;
+  }
 }
 
 .flip--subtitle {
@@ -49,6 +88,16 @@
   margin-right: 5px;
   flex-shrink: 1;
   flex-grow: 1;
+}
+
+@media (max-width: 568px) {
+  .flip--subtitle {
+    font-size: 14px;
+    justify-content: flex-start;
+  }
+  .flip--subtitle::before {
+    flex-grow: 0.3;
+  }
 }
 
 .flip__slide {
@@ -87,4 +136,11 @@
 	100% {
 		transform: translateY(0%);
 	}
+}
+
+@media (max-width: 568px) {
+  .flip__slide {
+    top: 74px;
+    overflow: hidden;
+  }
 }

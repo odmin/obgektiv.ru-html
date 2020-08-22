@@ -38,3 +38,9 @@
   border-right: 2px solid #212121;
   margin-right: 8px;
 }
+
+@media (max-width: 1250px) {
+  .main.main__home .main__header {
+    padding-left: 20px;
+  }
+}

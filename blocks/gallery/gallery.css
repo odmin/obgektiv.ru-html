@@ -27,6 +27,14 @@
   color: #FFFFFF;
 }
 
+@media (max-width: 1100px) {
+  .gallery .gallery--menu-text {
+    font-size: 18px;
+    left: 30px;
+    bottom: 30px;
+  }
+}
+
 .gallery .gallery--link {
   display: block;
   width: 100%;
@@ -41,6 +49,11 @@
 .gallery .gallery--screen {
   max-height: 1075px;
   overflow: scroll;
+}
+@media (max-width: 1100px) {
+  .gallery .gallery--screen {
+    height: 853px;
+  }
 }
 
 .gallery.gallery__video .gallery--img {

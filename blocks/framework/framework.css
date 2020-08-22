@@ -6,6 +6,18 @@
   position: relative;
   /* background: #ccc; */
 }
+@media (max-width: 1250px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 568px) {
+  .container {
+    width: 99%;
+    margin: 0 auto;
+  }
+} */
 /* purecss reset */
 html, button, input, select, textarea,
 .pure-g, .pure-g [class *= "pure-u"] {
@@ -36,10 +48,4 @@ html, button, input, select, textarea,
   height: 2px;
   background: #212121;
   flex: 1;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 100%;
-  }
 }

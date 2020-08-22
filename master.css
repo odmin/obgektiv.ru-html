@@ -1,7 +1,8 @@
 @import './node_modules/modern-normalize/modern-normalize.css';
 
 @import "./node_modules/purecss/build/grids.css";
-@import "./blocks/framework/*.css";
+@import "./node_modules/purecss/build/grids-responsive.css";
+@import "./blocks/framework/framework.css";
 @import "./blocks/menu/*.css";
 @import "./blocks/logo/*.css";
 @import "./blocks/header/*.css";
@@ -9,3 +10,4 @@
 @import "./blocks/button/*.css";
 @import "./blocks/main/*.css";
 @import "./blocks/gallery/*.css";
+@import "./blocks/framework/helpers.css";

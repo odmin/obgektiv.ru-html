@@ -1,5 +1,12 @@
+@import "../framework/var.css";
+
 .logo {
   width: 100%;
   padding: 0 1px;
   text-align: center;
+}
+@media (max-width: 1100px) {
+  .logo.logo__head{
+    display: none;
+  }
 }
