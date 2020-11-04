@@ -49,3 +49,8 @@ html, button, input, select, textarea,
   background: #212121;
   flex: 1;
 }
+@media (max-width: 767px) {
+  .pure-hidden-sm {
+    display: none;
+  }
+}

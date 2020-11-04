@@ -22,3 +22,8 @@
   text-decoration: none;
   cursor: default;
 }
+@media (max-width: 767px) {
+  .menu .menu--item {
+    padding: 0.35em 0;
+  }
+}
