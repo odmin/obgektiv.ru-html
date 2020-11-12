@@ -11,7 +11,9 @@
     width: 100%;
   }
 }
-
+.grey {
+  background-color: #EFF0F3;
+}
 /* @media (max-width: 568px) {
   .container {
     width: 99%;
