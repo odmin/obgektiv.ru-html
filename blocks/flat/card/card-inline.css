@@ -79,3 +79,17 @@
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
+.card-inline .card-inline__date {
+    font-family: Open Sans;
+    font-size: 12px;
+    line-height: 25px;
+    color: #A5ADBB;
+}
+.card-inline a {
+    color: #007AE9;
+    text-decoration: none;
+}
+.card-inline a:hover {
+    color: #007AE9;
+    text-decoration: underline;
+}
