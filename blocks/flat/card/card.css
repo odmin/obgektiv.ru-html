@@ -23,6 +23,9 @@
 .card.card_blue {
     background: linear-gradient(321.69deg, #4481EB 0%, #04BEFE 100%);
 }
+.card.card_roze {
+    background: linear-gradient(132.9deg, #f395ba 1.3%, #be2e68 98.06%);
+}
 .card::before {
     display: block;
     content: "";
