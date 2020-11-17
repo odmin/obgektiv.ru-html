@@ -9,14 +9,32 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
 </head>
 <body class="grey">
-  <div class="container">
-    <div class="pure-g">
-        <div class="pure-u-1-2">
-            <include src="./blocks/flat/card/card.html"></include>
-        </div>
-        <div class="pure-u-1-1">
-            <include src="./blocks/flat/card/card-inline.html"></include>
-        </div>
+  <div class="container container_mobfirst">
+    <div class="grid">
+      <div class="grid__item grid__item_1_1">
+          <include src="./blocks/flat/card/card-inline_profile.html"></include>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item_1_2">
+          <include src="./blocks/flat/card/card_red.html"></include>
+      </div>
+      <div class="grid__item grid__item_1_2">
+          <include src="./blocks/flat/card/card_roze.html"></include>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item_1_1">
+          <include src="./blocks/flat/card/card-inline_linkevent.html"></include>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid__item grid__item_1_2">
+          <include src="./blocks/flat/card/card_green.html"></include>
+      </div>
+      <div class="grid__item grid__item_1_2">
+          <include src="./blocks/flat/card/card_blue.html"></include>
+      </div>
     </div>
   </div>
   <link rel="stylesheet" href="flat.css">

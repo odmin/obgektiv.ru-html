@@ -11,6 +11,9 @@
     width: 100%;
   }
 }
+.container.container_mobfirst {
+  max-width: 540px;
+}
 .grey {
   background-color: #EFF0F3;
 }

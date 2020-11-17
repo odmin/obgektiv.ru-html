@@ -14,6 +14,20 @@
     color: inherit;
     appearance: none;
 }
+@media (max-width: 413px) {
+    .card {
+        padding: 14px 10px;
+        width: 173px;
+        min-height: 173px;
+    }
+}
+@media (max-width: 340px) {
+    .card {
+        padding: 14px 10px;
+        max-width: 149px;
+        min-height: 149px;
+    }
+}
 .card.card_red {
     background: linear-gradient(321.69deg, #FF6188 0%, #FFB199 100%);
 }
@@ -41,6 +55,15 @@
 .card.card_016bottle::before {
     background: url('/media/svg/016-bottle.svg') no-repeat center center;
 }
+.card.card_008store::before {
+    background: url('/media/svg/008-store.svg') no-repeat center center;
+}
+.card.card_001wine::before {
+    background: url('/media/svg/001-wine.svg') no-repeat center center;
+}
+.card.card_007grapes::before {
+    background: url('/media/svg/007-grapes.svg') no-repeat center center;
+}
 .card .card__title {
     /* font-family: DM Serif Display; */
     font-style: normal;
@@ -52,6 +75,18 @@
     color: #FFFFFF;
     margin: 0;
 }
+@media (max-width: 413px) {
+    .card .card__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 340px) {
+    .card .card__title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
 .card .card__subtitle {
     font-family: Open Sans, sans-serif;
     font-style: normal;
@@ -62,4 +97,15 @@
     /* Divider */
     color: #EBECED;
     margin: 0;
+}
+@media (max-width: 413px) {
+    .card .card__subtitle {
+        font-size: 14px;
+    }
+}
+@media (max-width: 340px) {
+    .card .card__subtitle {
+        font-size: 12px;
+        line-height: initial;
+    }
 }
