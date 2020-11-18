@@ -5,4 +5,5 @@
 @import "./blocks/framework/framework.css";
 
 @import "./blocks/flat/card/*.css";
+@import "./blocks/flat/button/*.css";
 @import "./blocks/flat/*.css";
