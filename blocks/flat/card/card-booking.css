@@ -26,6 +26,9 @@
     letter-spacing: 0.01em;
     color: #081F32;
 }
+.card-booking.card-booking_text .card-booking__title {
+    text-align: center;
+}
 .card-booking .card-booking__subtitle {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
