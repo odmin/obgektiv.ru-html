@@ -30,3 +30,8 @@
 .button.button_success > svg {
     fill: white;
 }
+.button.button_sm {
+    min-width: 114px;
+    padding: 9px 18px;
+    letter-spacing: 0.18em;
+}
