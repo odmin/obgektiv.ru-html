@@ -35,3 +35,7 @@
     padding: 9px 18px;
     letter-spacing: 0.18em;
 }
+.button.button_primary {
+    color: #FFFFFF;
+    background-color: #04BEFE;
+}
