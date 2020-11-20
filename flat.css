@@ -6,4 +6,5 @@
 
 @import "./blocks/flat/card/*.css";
 @import "./blocks/flat/button/*.css";
+@import "./blocks/flat/price/*.css";
 @import "./blocks/flat/*.css";

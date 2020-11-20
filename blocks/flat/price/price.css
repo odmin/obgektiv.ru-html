@@ -1,0 +1,36 @@
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* font-family: DM Serif Display; */
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+}
+.price .price__common {
+    font-size: 28px;
+    color: #081F32;
+}
+.price .price__discount {
+padding-left: 8px;
+font-size: 20px;
+text-decoration-line: line-through;
+color: #F8593B;
+}
+.price .price__common::after,
+.price .price__discount::after {
+    content: '';
+    display: inline-block;
+    margin-bottom: -3px;
+    background-size: contain;
+}
+.price .price__common::after {
+    width: 17px;
+    height: 25px;
+    background: url('/blocks/flat/price/price__ruble.svg') center center no-repeat;
+}
+.price .price__discount::after {
+    width: 14px;
+    height: 20px;
+    background: url('/blocks/flat/price/price__ruble_red.svg') center center no-repeat;
+}
