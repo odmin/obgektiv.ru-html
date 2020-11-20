@@ -17,6 +17,9 @@
 .card-booking.card-booking_subscribe .card-booking__header {
     background-image: url('/blocks/flat/card/card-booking_subscribe__header.jpg');
 }
+.card-booking.card-booking_tasting .card-booking__header {
+    background-image: url('/blocks/flat/card/card-booking_tasting__header.jpg');
+}
 .card-booking .card-booking__container {
     padding: 0 2vw;
 }
@@ -58,4 +61,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+.card-booking a {
+    color: #007AE9;
+    text-decoration: none;
+}
+.card-booking a:hover {
+    color: #007AE9;
+    text-decoration: underline;
 }
