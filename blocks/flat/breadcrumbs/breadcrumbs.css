@@ -1,0 +1,17 @@
+.breadcrumbs {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    display: block;
+    width: 100%;
+    padding-top: 2vw;
+    color: #374A59;
+}
+.breadcrumbs .breadcrumbs__link {
+    color: #007AE9;
+}
+.breadcrumbs .breadcrumbs__current {
+    color: #6E798C;
+}
