@@ -50,3 +50,11 @@ import dep from './path/to/dep'
 ```
 
 ```dist``` - builds result's folder
+
+## Notes
+
+- clean folder on production
+
+```bash
+find . -path ./wine -prune -false -o -name "[^yandex]*.html" -o -name "*.jpg" -o -name "*.png" -o -name "*.svg" -o -name "*.css*" -o -name "*.js*"
+```
