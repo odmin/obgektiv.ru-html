@@ -21,15 +21,6 @@ jobs:
       run: npm install
     - name: Run build task
       run: npm run build
-    - name: Clean folder before deploy
-      uses: StephanThierry/ftp-delete-action@releases/v1
-      with:
-        host: ${{ secrets.HOST }}
-        user: ${{ secrets.SSH_USER }}
-        password: ${{ secrets.PASSWORD }}
-        remoteFiles: "[^yandex]*.html;*.jpg;*.png;*.svg;*.css*;*.js*"
-        workingDir: ${{ secrets.FTP_REMOTE_FOLDER }}
-        ignoreSSL: "1"
     - name: Deploy to Server with FTP Deployer
       uses: sand4rt/ftp-deployer@v1.1
       with:
@@ -46,5 +37,5 @@ jobs:
         # The local folder location
         local_folder: 'dist' # optional, default is dist
         # Remove existing files inside FTP remote folder
-        cleanup: true # optional
+        cleanup: false # optional
         pasive: true # optional
