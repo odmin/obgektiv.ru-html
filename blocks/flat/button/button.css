@@ -10,6 +10,8 @@
     color: inherit;
     border-radius: 4px;
     text-decoration: none;
+    border: 0;
+    cursor: pointer;
 }
 .button.button_icon {
     width: 100%;
@@ -26,6 +28,9 @@
 .button.button_success {
     color: #FFFFFF;
     background-color: #2ECC71;
+}
+.button.button_success:hover {
+    color: #FFFFFF;
 }
 .button.button_success > svg {
     fill: white;
