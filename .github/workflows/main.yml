@@ -1,0 +1,41 @@
+name: Node CI ssh deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install npm dependencies
+      run: npm install
+    - name: Run build task
+      run: npm run build
+    - name: Deploy to Server with FTP Deployer
+      uses: sand4rt/ftp-deployer@v1.1
+      with:
+        # FTP host URL like: ftp.host.com
+        host: ${{ secrets.HOST }}
+        # FTP port default is: 21
+        port: 21 # optional
+        # Ftp username
+        username: ${{ secrets.SSH_USER }}
+        # Ftp password
+        password: ${{ secrets.PASSWORD }}
+        # The remote folder location of your FTP server
+        remote_folder: ${{ secrets.FTP_REMOTE_FOLDER }} # optional
+        # The local folder location
+        local_folder: 'dist' # optional, default is dist
+        # Remove existing files inside FTP remote folder
+        cleanup: false # optional
+        pasive: true # optional
