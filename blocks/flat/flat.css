@@ -6,3 +6,7 @@
     margin: 2vw auto;
     background: #EBECED;
 }
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
