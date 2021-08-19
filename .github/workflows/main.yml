@@ -1,10 +1,16 @@
-name: Node CI ssh deploy
+name: Node CI ftp deploy
 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
 
 jobs:
   build:
@@ -16,9 +22,15 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '14.x'
+    - name: Run make actions
+      run: make init
+    - name: Install parcel
+      run: npm install parcel --save-dev
     - name: Install npm dependencies
       run: npm install
+    - name: Test directory
+      run: ls -al ./css
     - name: Run build task
       run: npm run build
     - name: Deploy to Server with FTP Deployer
@@ -37,5 +49,5 @@ jobs:
         # The local folder location
         local_folder: 'dist' # optional, default is dist
         # Remove existing files inside FTP remote folder
-        cleanup: false # optional
+        cleanup: true # optional
         pasive: true # optional
